@@ -1,8 +1,11 @@
 # slack-status
 
-Create Token here
 
-* https://api.slack.com/custom-integrations/legacy-tokens
+* Installation
+
+# Create an access token https://api.slack.com/custom-integrations/legacy-tokens
+# Paste it on slack.sh
+# Run `sudo ln -s /home/fernando/code/slack-status/slack.sh /etc/network/if-up.d/slack`
 
 
 Inspiration
