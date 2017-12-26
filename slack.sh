@@ -1,5 +1,5 @@
 #!/bin/bash
-TOKEN=xoxp-2198507043-2198507047-291484773317-57f752895a54138694d6fcd1a68797b9
+TOKEN=xoxp----
 SSID=$(iwgetid -r)
 
 if [ $SSID == 'devartisUFO' ]
