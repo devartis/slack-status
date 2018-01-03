@@ -1,5 +1,6 @@
 # slack-status
 
+Updates your Slack status depending on the SSID of the Wifi network you are connected
 
 ## Installation
 
