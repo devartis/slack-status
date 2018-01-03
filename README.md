@@ -5,7 +5,7 @@ Updates your Slack status depending on the SSID of the Wifi network you are conn
 ## Installation
 
 1. Create an access token https://api.slack.com/custom-integrations/legacy-tokens
-1. Paste it on slack.sh
+1. Create a file named token.config with the generated token in it
 1. Run `sudo ln -s /home/fernando/code/slack-status/slack.sh /etc/network/if-up.d/slack`
 
 
