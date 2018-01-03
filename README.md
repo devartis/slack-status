@@ -1,14 +1,14 @@
 # slack-status
 
 
-* Installation
+## Installation
 
-# Create an access token https://api.slack.com/custom-integrations/legacy-tokens
-# Paste it on slack.sh
-# Run `sudo ln -s /home/fernando/code/slack-status/slack.sh /etc/network/if-up.d/slack`
+1. Create an access token https://api.slack.com/custom-integrations/legacy-tokens
+1. Paste it on slack.sh
+1. Run `sudo ln -s /home/fernando/code/slack-status/slack.sh /etc/network/if-up.d/slack`
 
 
-Inspiration
+## Inspiration
 
 * https://medium.com/slack-developer-blog/how-to-set-a-slack-status-from-other-apps-ab4eef871339
 * https://github.com/kuy/slack-loc/blob/master/scripts/update.sh
