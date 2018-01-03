@@ -1,13 +1,17 @@
 #!/bin/bash
-TOKEN=xoxp---
+TOKEN=xoxp-
 SSID=$(iwgetid -r)
 
 if [ $SSID == 'devartisUFO' ]
 then
 	STATUS='At%20devartis'
 	EMOJI='devartis'
+elif [ $SSID == 'Keepcon' ]
+then
+	STATUS='At%20Keepcon'
+	EMOJI='keepcon'
 else
-	STATUS='Remote'
+	STATUS='Working remotely'
 	EMOJI='house_with_garden'
 fi
 
