@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#NON_ROOT_USERNAME=$SUDO_USER
-TOKEN=$(</home/$SUDO_USER/.slack-token.config)
+USERNAME=$(who | awk '{print $1}')
+TOKEN=$(</home/$USERNAME/.slack-token.config)
 SSID=$(iwgetid -r)
 
 if [ $SSID == 'devartisUFO' ]
