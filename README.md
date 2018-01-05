@@ -4,10 +4,12 @@ Updates your Slack status depending on the SSID of the Wifi network you are conn
 
 ## Installation
 
-1. Clone this repository on your filesystem.
-1. Create an access token at https://api.slack.com/custom-integrations/legacy-tokens for your workspace (i.e devartis).
-1. Create a file named `token.config` with the generated token in it and save it at the root of the repository. This file should have just one line with the token.
-1. From the root of the repository run `sudo ln -s slack.sh /etc/network/if-up.d/slack`.
+1. Run `clone https://github.com/devartis/slack-status.git && cd slack-status`
+2. Create an access token at https://api.slack.com/custom-integrations/legacy-tokens for your workspace (i.e devartis).
+3. Create a file named `slack-token.config` with the generated token in it and save it at the root of the repository. This file should have just one line with the token.
+4. Run `mv slack-token.config ~/.slack-token.config` in order to hidde this file, and to be used by the script.
+5. Run `sudo cp slack.sh /etc/network/if-up.d/slack`.
+6. Enjoy the automatic slack status changing!
 
 ## Inspiration
 
