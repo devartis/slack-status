@@ -3,8 +3,9 @@
 USERNAME=$(who | awk '{print $1}')
 TOKEN=$(</home/$USERNAME/.slack-token.config)
 SSID=$(iwgetid -r)
+MAC=$(arping -f -I $(ip route show match 0/0 | awk '{print $5, $3}') | grep 'reply' | awk '{print $5}')
 
-if [ $SSID == 'devartisUFO' ]
+if [ $SSID == 'devartisUFO' ] || [ $MAC == '[D4:CA:6D:B4:67:13]' ]
 then
 	STATUS='At%20devartis'
 	EMOJI='devartis'
